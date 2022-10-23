@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Article preview component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="text-[13px] font-manrope">
+  <main class="bg-primary-lightGrayishBlue min-h-screen grid place-content-center px-6">
+    <div class="container mx-auto flex flex-col rounded-lg relative max-w-2xl md:flex-row">
+      <!-- image -->
+      <div class="rounded-t-lg overflow-hidden md:rounded-none md:rounded-tl-lg md:rounded-bl-lg">
+        <img src="./images/drawers.jpg" alt="drawer" class="max-w-full h-full object-cover object-center">
+      </div>
+      <!-- content -->
+      <div class="">
+        <article class="px-6 space-y-5 pt-8 bg-white md:rounded-tr-lg">
+          <h2 class="text-lg text-primary-veryDarkGrayishBlue font-bold">
+            Shift the overall look and feel by adding these wonderful 
+          touches to furniture in your home
+          </h2>
+          <p class="text-primary-desaturatedDarkBlue pb-6"> Ever been in a room and felt like something was missing? Perhaps
+            it felt slightly bare and uninviting. I’ve got some simple tips
+            to help you make any room feel complete.
+          </p>
+        </article>
+         <!-- user -->
+         <div class="relative flex items-center justify-between py-3 rounded-b-lg bg-white px-6 overflow-hidden md:overflow-visible md:rounded-none md:rounded-br-lg">
+          <!-- info -->
+          <div class="flex items-center">
+            <div class="w-8 h-8 rounded-full overflow-hidden mr-3">
+              <img src="./images/avatar-michelle.jpg" alt="avatar" class="object-cover object-center">
+            </div>
+            <p class="text-primary-veryDarkGrayishBlue font-bold">Michelle Appleton<br><span class="text-primary-grayishBlue font-normal text-xs">28 Jun 2020</span></p>
+          </div>
+          <!-- links -->
+          <div class="isolate md:relative">
+            <div id="shareBtn" class="w-7 h-7 rounded-full bg-primary-lightGrayishBlue flex items-center justify-center ease-in-out duration-300 cursor-pointer">
+              <img src="./images/icon-share.svg" alt="" class="ease-in-out duration-300">
+            </div>
+            <!-- mobile share links -->
+            <div id="mobileLinks" class="absolute bg-primary-veryDarkGrayishBlue top-0 bottom-0 w-0 right-0 -z-10 flex items-center space-x-4 ease-in-out duration-300 md:hidden">
+              <a href="#" class="uppercase tracking-[5px] text-xs text-primary-grayishBlue block pl-6">share</a>
+              <a href="#"><img src="./images/icon-facebook.svg" alt="" class="ease-in-out duration-300 translate-y-0 hover:-translate-y-1"></a>
+              <a href="#"><img src="./images/icon-twitter.svg" alt="" class="ease-in-out duration-300 translate-y-0 hover:-translate-y-1"></a>
+              <a href="#"><img src="./images/icon-pinterest.svg" alt="" class="ease-in-out duration-300 translate-y-0 hover:-translate-y-1"></a>
+            </div>
+            <!-- desktop share links -->
+            <div id="desktopLinks" class="absolute bg-primary-veryDarkGrayishBlue -top-16 right-1/2 translate-x-1/2 w-48 rounded-lg hidden z-10 ease-in-out duration-300 md:block fadeout">
+              <!-- arrow -->
+              <div class="absolute border border-8 border-transparent border-t-primary-veryDarkGrayishBlue top-full left-1/2 -translate-x-1/2"></div>
+              <div class="flex items-center p-3 px-6 space-x-3">
+                <a href="#" class="uppercase text-primary-grayishBlue text-xs tracking-[5px]">share</a>
+                <a href="#"><img src="./images/icon-facebook.svg" alt=""></a>
+                <a href="#"><img src="./images/icon-twitter.svg" alt=""></a>
+                <a href="#"><img src="./images/icon-pinterest.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+         </div>
+        </div>
+      </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
